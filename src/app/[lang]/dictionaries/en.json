@@ -1,0 +1,65 @@
+{
+  "meta": {
+    "title": "Lumina Ceramiche | The Gravity of Matter",
+    "description": "We don't just cover surfaces. We craft the dimension your space rests upon. Architectural sintered stone surfaces."
+  },
+  "nav": {
+    "collections": "Collections",
+    "projects": "Projects",
+    "innovation": "Innovation",
+    "sustainability": "Sustainability",
+    "b2b": "B2B Portal",
+    "menu": "Menu"
+  },
+  "hero": {
+    "line1": "THE",
+    "line2": "GRAVITY",
+    "line3": "OF MATTER",
+    "spec_dim": "DIM: 1200x2780mm",
+    "spec_thickness": "THICKNESS: 6mm",
+    "spec_material": "MATERIAL: SINTERED STONE",
+    "spec_application": "APPLICATION: ARCHITECTURAL CLADDING",
+    "tagline": "We don't just cover surfaces. We craft the dimension your space rests upon."
+  },
+  "integrity": {
+    "title_line1": "Architectural",
+    "title_line2": "Integrity",
+    "monolithic_title_line1": "Monolithic",
+    "monolithic_title_line2": "Scale",
+    "monolithic_desc": "Uninterrupted continuity for expansive architectural visions.",
+    "spec_label": "TECH_SPEC // 01",
+    "thickness_title": "Thickness Profile",
+    "thickness_desc": "Ultra-thin 6mm to structural 20mm capabilities.",
+    "downloads_label": "DOWNLOADS // PDF",
+    "downloads_title_line1": "View All",
+    "downloads_title_line2": "Specs",
+    "downloads_link": "Download Technical Data →"
+  },
+  "journal": {
+    "title": "The Journal",
+    "archive": "View Archive",
+    "article1_vol": "VOL. 14 // ARCHITECTURE",
+    "article1_tag": "Case Study",
+    "article1_location": "Villa Lario",
+    "article1_title": "Engineering the Edge: Precision in Residential Cladding",
+    "article2_vol": "VOL. 15 // MATERIA",
+    "article2_tag": "Materiality",
+    "article2_location": "R&D Lab",
+    "article2_title": "The Tactile Response: Formulating New Surface Tensions"
+  },
+  "footer": {
+    "b2b_area": "B2B Technical Area",
+    "private_clients": "Private Clients",
+    "bim_library": "BIM Library",
+    "epd_docs": "EPD Documentation",
+    "env_policy": "Environmental Policy",
+    "terms": "Terms of Service",
+    "copyright": "© 2026 Lumina Ceramiche S.r.l.",
+    "certification": "Sustainability Certified ISO 14001"
+  },
+  "lang": {
+    "it": "IT",
+    "en": "EN",
+    "es": "ES"
+  }
+}

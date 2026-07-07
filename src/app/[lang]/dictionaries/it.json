@@ -1,0 +1,65 @@
+{
+  "meta": {
+    "title": "Lumina Ceramiche | La Gravità della Materia",
+    "description": "Non ci limitiamo a rivestire superfici. Creiamo la dimensione su cui il vostro spazio si fonda. Superfici architettoniche in pietra sinterizzata."
+  },
+  "nav": {
+    "collections": "Collezioni",
+    "projects": "Progetti",
+    "innovation": "Innovazione",
+    "sustainability": "Sostenibilità",
+    "b2b": "Area B2B",
+    "menu": "Menu"
+  },
+  "hero": {
+    "line1": "LA",
+    "line2": "GRAVITÀ",
+    "line3": "DELLA MATERIA",
+    "spec_dim": "DIM: 1200x2780mm",
+    "spec_thickness": "SPESSORE: 6mm",
+    "spec_material": "MATERIALE: PIETRA SINTERIZZATA",
+    "spec_application": "APPLICAZIONE: RIVESTIMENTO ARCHITETTONICO",
+    "tagline": "Non ci limitiamo a rivestire superfici. Creiamo la dimensione su cui il vostro spazio si fonda."
+  },
+  "integrity": {
+    "title_line1": "Integrità",
+    "title_line2": "Architettonica",
+    "monolithic_title_line1": "Scala",
+    "monolithic_title_line2": "Monolitica",
+    "monolithic_desc": "Continuità ininterrotta per visioni architettoniche espansive.",
+    "spec_label": "SPEC_TECNICA // 01",
+    "thickness_title": "Profilo di Spessore",
+    "thickness_desc": "Capacità ultrasottili da 6mm a strutturali da 20mm.",
+    "downloads_label": "DOWNLOAD // PDF",
+    "downloads_title_line1": "Tutte le",
+    "downloads_title_line2": "Specifiche",
+    "downloads_link": "Scarica Dati Tecnici →"
+  },
+  "journal": {
+    "title": "Il Giornale",
+    "archive": "Vedi Archivio",
+    "article1_vol": "VOL. 14 // ARCHITETTURA",
+    "article1_tag": "Caso Studio",
+    "article1_location": "Villa Lario",
+    "article1_title": "Ingegneria del Bordo: Precisione nel Rivestimento Residenziale",
+    "article2_vol": "VOL. 15 // MATERIA",
+    "article2_tag": "Materialità",
+    "article2_location": "Laboratorio R&S",
+    "article2_title": "La Risposta Tattile: Formulare Nuove Tensioni Superficiali"
+  },
+  "footer": {
+    "b2b_area": "Area Tecnica B2B",
+    "private_clients": "Clienti Privati",
+    "bim_library": "Libreria BIM",
+    "epd_docs": "Documentazione EPD",
+    "env_policy": "Politica Ambientale",
+    "terms": "Termini di Servizio",
+    "copyright": "© 2026 Lumina Ceramiche S.r.l.",
+    "certification": "Certificazione Sostenibilità ISO 14001"
+  },
+  "lang": {
+    "it": "IT",
+    "en": "EN",
+    "es": "ES"
+  }
+}
