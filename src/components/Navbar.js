@@ -17,8 +17,14 @@ export default function Navbar({ dict, lang }) {
 
   /* Lock body scroll when menu is open */
   useEffect(() => {
-    document.body.style.overflow = menuOpen ? 'hidden' : ''
-    return () => { document.body.style.overflow = '' }
+    if (menuOpen) {
+      document.body.style.overflow = 'hidden'
+    } else {
+      document.body.style.overflow = ''
+    }
+    return () => {
+      document.body.style.overflow = ''
+    }
   }, [menuOpen])
 
   return (
@@ -36,25 +42,26 @@ export default function Navbar({ dict, lang }) {
         </div>
 
         <div className="navbar-actions">
-          <LanguageSwitcher currentLang={lang} />
-          <a href={`/${lang}#contact`} className="btn btn-solid" style={{ padding: '0.5em 1.2em' }}>
+          <div className="hidden md:block">
+            <LanguageSwitcher currentLang={lang} />
+          </div>
+          <a href={`/${lang}#contact`} className="btn-b2b hidden md:inline-block">
             {dict.nav.b2b}
           </a>
           <button
-            className="hamburger"
+            className="navbar-mobile-toggle"
             onClick={() => setMenuOpen(true)}
             aria-label={dict.nav.menu}
           >
-            <span className="hamburger-line" />
-            <span className="hamburger-line" />
+            <span className="material-symbols-outlined">menu</span>
           </button>
         </div>
       </nav>
 
-      {/* Mobile menu */}
+      {/* Mobile Fullscreen Menu */}
       <div className={`mobile-menu${menuOpen ? ' open' : ''}`}>
-        <button className="mobile-menu-close" onClick={() => setMenuOpen(false)}>
-          Close
+        <button className="mobile-menu-close font-label-technical" onClick={() => setMenuOpen(false)}>
+          Close [X]
         </button>
         <a href={`/${lang}#collections`} className="mobile-menu-link" onClick={() => setMenuOpen(false)}>
           {dict.nav.collections}
@@ -68,8 +75,11 @@ export default function Navbar({ dict, lang }) {
         <a href={`/${lang}#sustainability`} className="mobile-menu-link" onClick={() => setMenuOpen(false)}>
           {dict.nav.sustainability}
         </a>
-        <div style={{ marginTop: 'auto', paddingTop: '2rem' }}>
+        <div style={{ marginTop: 'auto', paddingTop: '2rem', display: 'flex', flexDirection: 'column', gap: '1.5rem' }}>
           <LanguageSwitcher currentLang={lang} />
+          <a href={`/${lang}#contact`} className="btn-b2b text-center" onClick={() => setMenuOpen(false)}>
+            {dict.nav.b2b}
+          </a>
         </div>
       </div>
     </>

@@ -96,17 +96,17 @@ const FRAGMENT_SHADER = `
 
     float marble = n1 * 0.6 + n2 * 0.3 + n3 * 0.1 + mouseInfluence;
 
-    /* Warm beige-white palette */
-    vec3 col1 = vec3(0.973, 0.969, 0.961);  /* #F8F7F5 */
-    vec3 col2 = vec3(0.941, 0.933, 0.925);  /* #F0EEEC */
-    vec3 col3 = vec3(0.910, 0.898, 0.886);  /* #E8E5E2 */
+    /* Dark charcoal basalt palette */
+    vec3 col1 = vec3(0.039, 0.039, 0.035);  /* #0A0A09 */
+    vec3 col2 = vec3(0.078, 0.078, 0.075);  /* #141413 */
+    vec3 col3 = vec3(0.118, 0.118, 0.110);  /* #1E1E1C */
 
     vec3 color = mix(col1, col2, smoothstep(0.3, 0.7, marble));
     color = mix(color, col3, smoothstep(0.6, 0.9, n2));
 
     /* Subtle vein lines */
     float vein = smoothstep(0.48, 0.52, sin(marble * 12.0 + n2 * 4.0));
-    color = mix(color, col3 * 0.92, vein * 0.2);
+    color = mix(color, col3 * 1.5, vein * 0.15);
 
     gl_FragColor = vec4(color, 1.0);
   }

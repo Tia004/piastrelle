@@ -22,56 +22,71 @@ export default function JournalSection({ dict }) {
   }, [])
 
   return (
-    <section className="section site-container" ref={sectionRef} id="projects">
-      {/* Section header */}
-      <div className="section-header fade-in">
-        <div className="eyebrow">
-          <div className="eyebrow-dot" />
-          <span className="text-display">{dict.journal.title}</span>
-        </div>
-        <a href="#" className="btn">{dict.journal.archive}</a>
+    <section className="journal-section theme-light brutal-grid site-container" ref={sectionRef} id="projects">
+      {/* Header Row */}
+      <div className="journal-header-row fade-in">
+        <h2 className="font-display-hero" style={{ fontSize: 'clamp(3rem, 10vw, 10rem)' }}>
+          {dict.journal.title}
+        </h2>
+        <a className="btn-brutal" href="#">
+          {dict.journal.archive}
+        </a>
       </div>
 
-      {/* Articles grid */}
-      <div className="journal-grid">
+      {/* Articles Grid */}
+      <div className="journal-layout-grid">
         {/* Article 1 */}
-        <article className="journal-article fade-in">
-          <div className="font-mono" style={{ color: 'var(--text-muted)', marginBottom: 'var(--space-lg)' }}>
-            {dict.journal.article1_vol}
-          </div>
-          <div className="journal-image-wrap">
+        <article className="journal-card white-block fade-in">
+          <div className="image-container aspect-square mb-8">
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
-              src="https://lh3.googleusercontent.com/aida-public/AB6AXuCO_PVAkCfP-Oi3-cevL9h5uR4mKS8ZZUFU-a3lLG3f3wIYQPt-d9RwBRSvb3Jqcx0IrEnkZACnhHkVlX2VpI-FfxWLBLHBGbwzIE5cFkFOxLBzqLf3BhNl8VCb3F_h8mh59nDH-YrqgHiAnbk9iA9nT2Ax0C2rrMmJ_jJaW3LQ-KuHFX-bflqFjT3BxPHECvk8fVRPpxf_FaUoVR_UGWe3Kkbx-6yYL2j8PSvJGQnZxIfb_Nb9A9JVCRrRw0sY7ooUVfVhZEbxU"
+              className="image-grayscale"
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuArqU8hj1c7DWBh3KrLHb56V1v7bEr-oBRPRteqRbN_j1XeYgaHTK2O2f6JrLFw4TyQ_JdPP6tCH7Cb2B7gY7xVctriECXN5NCBfYUOyHjD10Be6isXK0gJHfojuu7gzP8ck23J3Twefcr7g7iroTJBgW2iN-geqL6GKaIu1lbxEZPehiiE__-gAzP9lNXY0CRsDvoZYyTp_2GvmLV2i6TyDaccVS14oQm_TMzsYHTNLaraBbaQ9D0"
               alt="Residential cladding case study"
               loading="lazy"
             />
+            <div className="absolute top-4 left-4 solid-block font-label-technical" style={{ padding: '8px 12px' }}>
+              {dict.journal.article1_vol}
+            </div>
           </div>
-          <div className="journal-meta">
-            <span className="journal-tag">{dict.journal.article1_tag}</span>
-            <span className="journal-location">{dict.journal.article1_location}</span>
+          <div className="journal-badge-container">
+            <span className="journal-meta-tag font-label-technical">
+              {dict.journal.article1_tag}
+            </span>
+            <span className="font-label-technical" style={{ color: '#1A1A1A' }}>
+              {dict.journal.article1_location}
+            </span>
           </div>
-          <h3 className="journal-title">{dict.journal.article1_title}</h3>
+          <h3 className="font-display-hero font-headline-lg" style={{ fontSize: 'clamp(1.5rem, 3.5vw, 3.5rem)', color: '#1A1A1A' }}>
+            {dict.journal.article1_title}
+          </h3>
         </article>
 
-        {/* Article 2 — offset */}
-        <article className="journal-article fade-in" style={{ transitionDelay: '0.2s' }}>
-          <div className="font-mono" style={{ color: 'var(--text-muted)', marginBottom: 'var(--space-lg)' }}>
-            {dict.journal.article2_vol}
-          </div>
-          <div className="journal-image-wrap">
+        {/* Article 2 (Staggered / Offset layout) */}
+        <article className="journal-card white-block fade-in" style={{ transitionDelay: '0.2s' }}>
+          <div className="image-container aspect-square mb-8">
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
-              src="https://lh3.googleusercontent.com/aida-public/AB6AXuDXC3-YTr6bFc6bE08Mhq3R7lxGPj0O-ZRNJuYshGnbK7DFw8jxS1ks3MwMVL3w8qB8vKP-j1lIlQHT9Zj2PpZf0OFJnJPnXjcLyoJGGvZ5nD4rlVjvPZcNdAkRWqkHDDPm7mrrIHSqnE9rnLlPz9iI6AabRf7oLWuhw8pzCv7PxUkp-bZGi6j7D4OKc0ZNH1L2N4wWbxEjjcIYBpFLz8KYaevbGxDqF18P5R5jkHn_L2k8Tl5C0j-GNWpS-50FEyYLgsjkN5tJ4"
+              className="image-grayscale"
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuCDRWXIe7fvVHzvntyTPEEzA42TP8nUDtD2TtoB9HvPgNFSravMiZRxqO9V31N7cCQE3icSNpQBcFhWinvrpcCZNAJiu21J8XZonPzwEu0nMfbTShxkmMMr3q1p5FKr7d9RysUs9Oc0ZGQ3ikJ3DA7cKCgv5kjh-41jyGmjMPWKsDuAnzAMjIV2EIYNgGNY4TnlHNAshzevtmuA6P7cUyOQVye5xdQ6uZDBDqd4ipJtIvIfjz3QVto"
               alt="Surface tension R&D lab"
               loading="lazy"
             />
+            <div className="absolute top-4 left-4 solid-block font-label-technical" style={{ padding: '8px 12px' }}>
+              {dict.journal.article2_vol}
+            </div>
           </div>
-          <div className="journal-meta">
-            <span className="journal-tag">{dict.journal.article2_tag}</span>
-            <span className="journal-location">{dict.journal.article2_location}</span>
+          <div className="journal-badge-container">
+            <span className="journal-meta-tag font-label-technical">
+              {dict.journal.article2_tag}
+            </span>
+            <span className="font-label-technical" style={{ color: '#1A1A1A' }}>
+              {dict.journal.article2_location}
+            </span>
           </div>
-          <h3 className="journal-title">{dict.journal.article2_title}</h3>
+          <h3 className="font-display-hero font-headline-lg" style={{ fontSize: 'clamp(1.5rem, 3.5vw, 3.5rem)', color: '#1A1A1A' }}>
+            {dict.journal.article2_title}
+          </h3>
         </article>
       </div>
     </section>

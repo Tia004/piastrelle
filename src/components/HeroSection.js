@@ -25,40 +25,39 @@ export default function HeroSection({ dict }) {
   }, [])
 
   return (
-    <section className="hero" ref={sectionRef} id="hero">
+    <section className="hero-section theme-dark brutal-grid" ref={sectionRef} id="hero">
       {/* WebGL marble shader background */}
-      <div className="hero-bg">
+      <div className="hero-canvas-container">
         <ShaderBackground />
       </div>
 
-      {/* Gradient overlay */}
-      <div className="hero-overlay" />
+      {/* Typography Grid */}
+      <div className="hero-grid-layout">
+        <div className="hero-text-block">
+          {/* Metadata Specs Badge */}
+          <div className="hero-meta-badge font-label-technical fade-in">
+            {dict.hero.spec_dim} | {dict.hero.spec_thickness}<br />
+            {dict.hero.spec_material}<br />
+            {dict.hero.spec_application}
+          </div>
 
-      {/* Main content */}
-      <div className="hero-content">
-        <div className="hero-title fade-in">
-          <div className="text-hero">{dict.hero.line1}</div>
-          <div className="text-hero" style={{ marginLeft: '8vw' }}>{dict.hero.line2}</div>
-          <div className="text-hero">{dict.hero.line3}</div>
+          {/* Huge Display Hero Title */}
+          <h1 className="font-display-hero hero-heading fade-in" style={{ color: 'var(--text-color)' }}>
+            {dict.hero.line1}<br />
+            {dict.hero.line2}<br />
+            {dict.hero.line3}
+          </h1>
+
+          {/* Slogan & Scroll Row */}
+          <div className="hero-bottom-row fade-in">
+            <p className="hero-slogan-box">
+              {dict.hero.tagline}
+            </p>
+            <div className="hero-scroll-btn">
+              <span className="material-symbols-outlined" style={{ fontSize: '36px' }}>arrow_downward</span>
+            </div>
+          </div>
         </div>
-
-        <div className="hero-specs fade-in" style={{ transitionDelay: '0.2s' }}>
-          <span className="font-mono" style={{ color: 'var(--text-muted)' }}>{dict.hero.spec_dim}</span>
-          <span className="font-mono" style={{ color: 'var(--text-muted)' }}>{dict.hero.spec_material}</span>
-          <span className="font-mono" style={{ color: 'var(--text-muted)' }}>{dict.hero.spec_application}</span>
-        </div>
-
-        <p className="hero-tagline fade-in" style={{ transitionDelay: '0.4s' }}>
-          {dict.hero.tagline}
-        </p>
-      </div>
-
-      {/* Scroll indicator */}
-      <div className="hero-scroll-indicator">
-        <span>Scroll</span>
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-          <path d="M12 5v14M5 12l7 7 7-7" />
-        </svg>
       </div>
     </section>
   )
