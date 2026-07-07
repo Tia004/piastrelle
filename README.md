@@ -1,7 +1,7 @@
 # Ceramica Nova - Prototipo Landing Page
 
 <!-- VERSION-START -->
-![Versione](https://img.shields.io/badge/version-v0.0.2-c5a880?style=flat-square)
+![Versione](https://img.shields.io/badge/version-v0.1.0-c5a880?style=flat-square)
 <!-- VERSION-END -->
 
 Un prototipo di sito web premium e altamente interattivo sviluppato per una SRL di piastrelle e rivestimenti di lusso (**Ceramica Nova**). Il sito include una vetrina per le collezioni di punta e un configuratore/visualizzatore di pavimenti interattivo in tempo reale sviluppato in Vanilla CSS e React.
@@ -53,6 +53,7 @@ npm start
 
 | Versione | Data | Descrizione | Commit |
 | :--- | :--- | :--- | :--- |
+| **v0.1.0** | 2026-07-07 | Rifatto il design con alternanza di temi scuro/chiaro ad alto contrasto, sistemato le immagini ed email di contatto | `3bc38c0` |
 | **v0.0.2** | 2026-07-07 | Sito inizializzato con design minimalista fatto bene | `679cdd1` |
 | **v0.0.1** | 2026-07-07 | Inizializzazione progetto Next.js | `4296d49` |
 | **v0.0.1** | 2026-07-07 | Inizializzazione progetto Next.js e automazione README | `ff78b0d` |
