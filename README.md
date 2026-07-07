@@ -53,6 +53,7 @@ npm start
 
 | Versione | Data | Descrizione | Commit |
 | :--- | :--- | :--- | :--- |
+| **v0.0.1** | 2026-07-07 | Inizializzazione progetto Next.js | `4296d49` |
 | **v0.0.1** | 2026-07-07 | Inizializzazione progetto Next.js e automazione README | `ff78b0d` |
 
 <!-- CHANGELOG-END -->
