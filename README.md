@@ -8,7 +8,7 @@ Un prototipo di sito web premium e altamente interattivo sviluppato per una SRL 
 
 ---
 
-## 💎 Caratteristiche del Progetto
+## Caratteristiche del Progetto
 
 - **Design Premium & Immersivo:** Look minimale scuro con dettagli dorati, caratteri tipografici curati (Playfair Display & Outfit) ed effetti di transizione fluidi.
 - **Visualizzatore Interattivo:** Un configuratore che simula la posa delle piastrelle in uno showroom, consentendo al cliente di testare diverse combinazioni di materiali (Marmo Statuario, Ardesia Nera, Cotto Rustico) e colori di fuga in tempo reale.
@@ -17,7 +17,7 @@ Un prototipo di sito web premium e altamente interattivo sviluppato per una SRL 
 
 ---
 
-## 🛠️ Tecnologie Utilizzate
+## Tecnologie Utilizzate
 
 - **Next.js 16 (App Router)**
 - **React 19**
@@ -26,7 +26,7 @@ Un prototipo di sito web premium e altamente interattivo sviluppato per una SRL 
 
 ---
 
-## 📦 Installazione e Avvio Rapido
+## Installazione e Avvio Rapido
 
 ### 1. Clona il repository e installa le dipendenze
 ```bash
@@ -47,7 +47,7 @@ npm start
 
 ---
 
-## 📈 Regole di Commit e Versionamento Automatico
+## Regole di Commit e Versionamento Automatico
 
 Le versioni del progetto seguono lo standard `n.n.n` (SemVer) divise in:
 1. **Versione Major** (cambiamenti strutturali importanti)
