@@ -78,6 +78,6 @@ Lo script estrarrà la cronologia dei commit che corrispondono al pattern e aggi
 
 | Versione | Data | Descrizione | Commit |
 | :--- | :--- | :--- | :--- |
-| **v0.0.1** | 2026-07-07 | Inizializzazione progetto Next.js e automazione README | `f026e48` |
+| **v0.0.1** | 2026-07-07 | Inizializzazione progetto Next.js e automazione README | `ff78b0d` |
 
 <!-- CHANGELOG-END -->
