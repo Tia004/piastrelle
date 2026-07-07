@@ -47,31 +47,6 @@ npm start
 
 ---
 
-## Regole di Commit e Versionamento Automatico
-
-Le versioni del progetto seguono lo standard `n.n.n` (SemVer) divise in:
-1. **Versione Major** (cambiamenti strutturali importanti)
-2. **Nuova Funzione / Feature** (nuove funzionalità o sezioni)
-3. **Bug Fix / Patch** (correzioni o piccoli ritocchi)
-
-### Formato dei Commit
-Ogni push o commit di rilascio deve avere un messaggio strutturato nel seguente modo:
-`vn.n.n - [Inserisci cambiamenti]`
-
-*Esempio:*
-`v1.2.4 - Nuovi strumenti e bug fix generali`
-
-### Aggiornamento Automatico del README
-Il file `README.md` (questo file) viene aggiornato automaticamente ad ogni **push** tramite una GitHub Action, oppure può essere aggiornato localmente eseguendo:
-
-```bash
-npm run update-readme
-```
-
-Lo script estrarrà la cronologia dei commit che corrispondono al pattern e aggiornerà sia il badge della versione in alto sia la tabella del registro versioni (changelog) qui sotto.
-
----
-
 ## Registro Versioni (Changelog)
 
 <!-- CHANGELOG-START -->

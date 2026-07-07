@@ -73,3 +73,7 @@ tmp/
 temp/
 *~
 ~*
+
+# Local Agent customizations (private rules)
+.agents/
+
