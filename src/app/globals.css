@@ -116,6 +116,8 @@ ul, ol {
   line-height: 0.8;
   letter-spacing: -0.04em;
   text-transform: uppercase;
+  overflow-wrap: break-word;
+  hyphens: auto;
 }
 
 .font-headline-lg {
@@ -125,6 +127,8 @@ ul, ol {
   line-height: 0.9;
   letter-spacing: -0.02em;
   text-transform: uppercase;
+  overflow-wrap: break-word;
+  hyphens: auto;
 }
 
 .font-label-technical {
@@ -140,6 +144,17 @@ ul, ol {
   font-family: var(--font-sans);
   font-size: clamp(1rem, 1.25vw, 1.25rem);
   line-height: 1.6;
+}
+
+/* ─── LAYOUT CONTAINERS ─── */
+.site-container {
+  padding-block: var(--space-4xl);
+}
+
+@media (max-width: 768px) {
+  .site-container {
+    padding-block: var(--space-3xl);
+  }
 }
 
 /* ─── BRUTALIST GRID PATTERN ─── */
@@ -281,7 +296,8 @@ ul, ol {
   transition: color 0.3s ease;
 }
 
-.navbar.scrolled .navbar-logo {
+.navbar.scrolled .navbar-logo,
+.navbar-logo--light {
   color: #ffffff !important;
 }
 
@@ -1320,7 +1336,7 @@ ul, ol {
 
   .bento-cards-container {
     grid-template-columns: 1fr;
-    auto-rows: minmax(350px, auto);
+    grid-auto-rows: minmax(350px, auto);
   }
   
   .bento-card-1 {

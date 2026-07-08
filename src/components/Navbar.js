@@ -66,17 +66,18 @@ function MenuPortal({ children }) {
 }
 
 /* ─── Language switcher dropdown ─── */
-function LangSwitcher({ lang, scrolled }) {
+export function LangSwitcher({ lang, scrolled, menuOpen }) {
   const [open, setOpen] = useState(false)
-  const ref = useRef(null)
   const router = useRouter()
+  const ref = useRef(null)
 
+  // Close when clicking outside
   useEffect(() => {
-    const handler = (e) => {
+    const handleOutsideClick = (e) => {
       if (ref.current && !ref.current.contains(e.target)) setOpen(false)
     }
-    document.addEventListener('mousedown', handler)
-    return () => document.removeEventListener('mousedown', handler)
+    document.addEventListener('mousedown', handleOutsideClick)
+    return () => document.removeEventListener('mousedown', handleOutsideClick)
   }, [])
 
   const currentLang = LANGS.find((l) => l.code === lang) || LANGS[0]
@@ -84,7 +85,7 @@ function LangSwitcher({ lang, scrolled }) {
   return (
     <div className="lang-switcher" ref={ref}>
       <button
-        className={`lang-switcher__trigger${scrolled ? ' lang-switcher__trigger--light' : ''}`}
+        className={`lang-switcher__trigger${(scrolled || menuOpen) ? ' lang-switcher__trigger--light' : ''}`}
         onClick={() => setOpen((v) => !v)}
         aria-haspopup="listbox"
         aria-expanded={open}
@@ -166,18 +167,17 @@ export default function Navbar({ dict, lang }) {
     <>
       {/* ─── Top bar ─── */}
       <nav
-        className={`navbar${scrolled ? ' scrolled' : ''}`}
+        className={`navbar${scrolled ? ' scrolled' : ''}${menuOpen ? ' menu-open' : ''}`}
         id="navbar"
         style={{ zIndex: 10000 }}
       >
-        <a href={`/${lang}`} className="navbar-logo">
+        <a href={`/${lang}`} className={`navbar-logo${menuOpen ? ' navbar-logo--light' : ''}`}>
           Lumina Ceramiche
         </a>
 
-
         {/* Right controls: lang switcher + hamburger */}
         <div className="navbar-controls">
-          <LangSwitcher lang={lang} scrolled={scrolled} />
+          <LangSwitcher lang={lang} scrolled={scrolled} menuOpen={menuOpen} />
           <button
             className={`hamburger${menuOpen ? ' hamburger--open' : ''}${scrolled ? ' hamburger--scrolled' : ''}`}
             onClick={() => setMenuOpen((v) => !v)}
@@ -244,7 +244,7 @@ export default function Navbar({ dict, lang }) {
                 ))}
               </nav>
 
-              {/* Footer: language + tagline */}
+              {/* Footer: tagline */}
               <motion.div
                 className="fullmenu__footer"
                 variants={footerItemVariants}
@@ -252,22 +252,6 @@ export default function Navbar({ dict, lang }) {
                 animate="open"
                 exit={{ opacity: 0, transition: { duration: 0.1 } }}
               >
-                <div className="fullmenu__langs">
-                  {LANGS.map((l) => (
-                    <button
-                      key={l.code}
-                      className={`fullmenu__lang-btn${lang === l.code ? ' active' : ''}`}
-                      onClick={() => {
-                        setMenuOpen(false)
-                        /* navigate using window.location to avoid portal/router issues */
-                        window.location.href = `/${l.code}`
-                      }}
-                    >
-                      <span className="fullmenu__lang-flag">{l.flag}</span>
-                      <span className="fullmenu__lang-code">{l.code.toUpperCase()}</span>
-                    </button>
-                  ))}
-                </div>
                 <p className="fullmenu__tagline">Lumina Ceramiche — Milano, Italia</p>
               </motion.div>
             </motion.div>

@@ -77,5 +77,6 @@ temp/
 # Local Agent customizations (private rules)
 .agents/
 
-AGENTS.MD
-CLAUDE.MD
+AGENTS.md
+CLAUDE.md
+AGENTS.md
