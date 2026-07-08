@@ -1,7 +1,7 @@
 # Ceramica Nova - Prototipo Landing Page
 
 <!-- VERSION-START -->
-![Versione](https://img.shields.io/badge/version-v0.3.0-c5a880?style=flat-square)
+![Versione](https://img.shields.io/badge/version-v0.4.0-c5a880?style=flat-square)
 <!-- VERSION-END -->
 
 Un prototipo di sito web premium e altamente interattivo sviluppato per una SRL di piastrelle e rivestimenti di lusso (**Ceramica Nova**). Il sito include una vetrina per le collezioni di punta e un configuratore/visualizzatore di pavimenti interattivo in tempo reale sviluppato in Vanilla CSS e React.
@@ -53,6 +53,7 @@ npm start
 
 | Versione | Data | Descrizione | Commit |
 | :--- | :--- | :--- | :--- |
+| **v0.4.0** | 2026-07-08 | Sistemato un po' tutto il sito per demo navigabilità. | `9b39ca4` |
 | **v0.3.0** | 2026-07-07 | Sostituito la hero principale con il video background PrismaHero, tradotto i testi e aggiunto selettore lingua dropdown con bandiere | `bde26a6` |
 | **v0.2.0** | 2026-07-07 | Aggiunto componente PrismaHero e rotta /prisma con video stock | `59a3490` |
 | **v0.1.1** | 2026-07-07 | Risolto l'overlapping del menu mobile e della badge delle specifiche tecniche nella Hero | `0fb9f8f` |
