@@ -174,14 +174,6 @@ export default function Navbar({ dict, lang }) {
           Lumina Ceramiche
         </a>
 
-        {/* Desktop links */}
-        <div className="navbar-links">
-          {links.map((l) => (
-            <a key={l.label} href={l.href} className="navbar-link">
-              {l.label}
-            </a>
-          ))}
-        </div>
 
         {/* Right controls: lang switcher + hamburger */}
         <div className="navbar-controls">
@@ -217,8 +209,6 @@ export default function Navbar({ dict, lang }) {
                 left: 0,
                 right: 0,
                 bottom: 0,
-                width: '100vw',
-                height: '100vh',
                 zIndex: 9999,
               }}
             >
