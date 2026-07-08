@@ -16,7 +16,7 @@ export default function Footer({ dict, lang }) {
           <div>
             <a className="footer-nav-link" href="#">{dict.footer.b2b_area}</a>
             <a className="footer-nav-link" href="#">{dict.footer.private_clients}</a>
-            <a className="footer-nav-link" href="mailto:ing.davide.moretti@gmail.com">ing.davide.moretti@gmail.com</a>
+            <a className="footer-nav-link" href="#">info@luminaceramiche.it</a>
           </div>
           <div>
             <a className="footer-nav-link" href="#">{dict.footer.bim_library}</a>
@@ -35,7 +35,21 @@ export default function Footer({ dict, lang }) {
             {dict.footer.certification}
           </p>
         </div>
+
+        {/* Made by credit */}
+        <div className="footer-made-by">
+          Made by{' '}
+          <a
+            href="https://www.instagram.com/latitiante"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="footer-made-by__link"
+          >
+            Tia
+          </a>
+        </div>
       </div>
     </footer>
+
   )
 }

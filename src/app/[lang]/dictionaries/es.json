@@ -8,8 +8,10 @@
     "projects": "Proyectos",
     "innovation": "Innovación",
     "sustainability": "Sostenibilidad",
+    "contact": "Contacto",
     "b2b": "Área B2B",
-    "menu": "Menú"
+    "menu": "Menú",
+    "close": "Cerrar"
   },
   "hero": {
     "line1": "LA",
@@ -19,7 +21,8 @@
     "spec_thickness": "ESPESOR: 6mm",
     "spec_material": "MATERIAL: PIEDRA SINTERIZADA",
     "spec_application": "APLICACIÓN: REVESTIMIENTO ARQUITECTÓNICO",
-    "tagline": "No nos limitamos a cubrir superficies. Creamos la dimensión sobre la que descansa tu espacio."
+    "tagline": "No nos limitamos a cubrir superficies. Creamos la dimensión sobre la que descansa tu espacio.",
+    "services_cta": "Descubre nuestros servicios"
   },
   "integrity": {
     "title_line1": "Integridad",
@@ -56,6 +59,17 @@
     "terms": "Términos de Servicio",
     "copyright": "© 2026 Lumina Ceramiche S.r.l.",
     "certification": "Certificación Sostenibilidad ISO 14001"
+  },
+  "contact": {
+    "label": "CONTÁCTANOS",
+    "heading": "Hablemos de tu proyecto",
+    "subheading": "Para consultas comerciales, muestras de materiales y soporte técnico: estamos a su disposición.",
+    "name_placeholder": "Nombre y Apellido",
+    "email_placeholder": "Dirección de Email",
+    "message_placeholder": "Cuéntenos sobre su proyecto...",
+    "send": "Enviar Mensaje",
+    "or": "o escribe directamente a",
+    "success": "Mensaje enviado. Le responderemos en 24 horas."
   },
   "lang": {
     "it": "IT",

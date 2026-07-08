@@ -8,8 +8,10 @@
     "projects": "Projects",
     "innovation": "Innovation",
     "sustainability": "Sustainability",
+    "contact": "Contact",
     "b2b": "B2B Portal",
-    "menu": "Menu"
+    "menu": "Menu",
+    "close": "Close"
   },
   "hero": {
     "line1": "THE",
@@ -19,7 +21,8 @@
     "spec_thickness": "THICKNESS: 6mm",
     "spec_material": "MATERIAL: SINTERED STONE",
     "spec_application": "APPLICATION: ARCHITECTURAL CLADDING",
-    "tagline": "We don't just cover surfaces. We craft the dimension your space rests upon."
+    "tagline": "We don't just cover surfaces. We craft the dimension your space rests upon.",
+    "services_cta": "Discover our services"
   },
   "integrity": {
     "title_line1": "Architectural",
@@ -56,6 +59,17 @@
     "terms": "Terms of Service",
     "copyright": "© 2026 Lumina Ceramiche S.r.l.",
     "certification": "Sustainability Certified ISO 14001"
+  },
+  "contact": {
+    "label": "GET IN TOUCH",
+    "heading": "Let's talk about your project",
+    "subheading": "For commercial enquiries, material samples and technical support — we are at your disposal.",
+    "name_placeholder": "Full Name",
+    "email_placeholder": "Email Address",
+    "message_placeholder": "Tell us about your project...",
+    "send": "Send Message",
+    "or": "or write directly to",
+    "success": "Message sent. We will reply within 24 hours."
   },
   "lang": {
     "it": "IT",

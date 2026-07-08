@@ -8,8 +8,10 @@
     "projects": "Progetti",
     "innovation": "Innovazione",
     "sustainability": "Sostenibilità",
+    "contact": "Contatti",
     "b2b": "Area B2B",
-    "menu": "Menu"
+    "menu": "Menu",
+    "close": "Chiudi"
   },
   "hero": {
     "line1": "LA",
@@ -19,7 +21,8 @@
     "spec_thickness": "SPESSORE: 6mm",
     "spec_material": "MATERIALE: PIETRA SINTERIZZATA",
     "spec_application": "APPLICAZIONE: RIVESTIMENTO ARCHITETTONICO",
-    "tagline": "Non ci limitiamo a rivestire superfici. Creiamo la dimensione su cui il vostro spazio si fonda."
+    "tagline": "Non ci limitiamo a rivestire superfici. Creiamo la dimensione su cui il vostro spazio si fonda.",
+    "services_cta": "Scopri i nostri servizi"
   },
   "integrity": {
     "title_line1": "Integrità",
@@ -56,6 +59,17 @@
     "terms": "Termini di Servizio",
     "copyright": "© 2026 Lumina Ceramiche S.r.l.",
     "certification": "Certificazione Sostenibilità ISO 14001"
+  },
+  "contact": {
+    "label": "CONTATTACI",
+    "heading": "Parliamo del vostro progetto",
+    "subheading": "Per richieste commerciali, campioni materiali e supporto tecnico: siamo a vostra disposizione.",
+    "name_placeholder": "Nome e Cognome",
+    "email_placeholder": "Indirizzo Email",
+    "message_placeholder": "Descriveteci il vostro progetto...",
+    "send": "Invia Messaggio",
+    "or": "oppure scrivi direttamente a",
+    "success": "Messaggio inviato. Vi risponderemo entro 24 ore."
   },
   "lang": {
     "it": "IT",
