@@ -1,0 +1,18 @@
+[
+  {
+    "id": "1",
+    "name": "Alessandro Rossi",
+    "title": "Materiali superbi ed eleganza unica",
+    "rating": 5,
+    "text": "Ho acquistato le piastrelle per il mio nuovo showroom e sono rimasto estremamente soddisfatto. La finitura riflette la luce in modo stupendo e la qualità percepita è eccezionale. Servizio clienti impeccabile.",
+    "avatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150"
+  },
+  {
+    "id": "2",
+    "name": "Giulia Bianchi",
+    "title": "Design moderno e raffinato",
+    "rating": 4.5,
+    "text": "Le piastrelle in gres effetto marmo hanno trasformato completamente il mio soggiorno. La precisione del taglio ha reso la posa semplicissima. Consigliatissimo per chi cerca il massimo dell'estetica.",
+    "avatar": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=150"
+  }
+]

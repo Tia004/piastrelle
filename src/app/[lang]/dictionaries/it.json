@@ -71,6 +71,11 @@
     "or": "oppure scrivi direttamente a",
     "success": "Messaggio inviato. Vi risponderemo entro 24 ore."
   },
+  "reviews": {
+    "title": "Cosa dicono i nostri clienti",
+    "subtitle": "Testimonianze reali di architetti, designer e proprietari che hanno scelto la qualità Lumina Ceramiche.",
+    "empty": "Nessuna recensione disponibile al momento."
+  },
   "lang": {
     "it": "IT",
     "en": "EN",

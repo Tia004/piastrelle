@@ -4,6 +4,7 @@ import Navbar from '../../components/Navbar'
 import HeroSection from '../../components/HeroSection'
 import BentoGrid from '../../components/BentoGrid'
 import JournalSection from '../../components/JournalSection'
+import ReviewsSection from '../../components/ReviewsSection'
 import ContactSection from '../../components/ContactSection'
 import Footer from '../../components/Footer'
 
@@ -23,6 +24,7 @@ export default async function Page({ params }) {
         <HeroSection dict={dict} lang={lang} />
         <BentoGrid dict={dict} />
         <JournalSection dict={dict} />
+        <ReviewsSection dict={dict} />
         <ContactSection dict={dict} />
       </main>
       <Footer dict={dict} lang={lang} />
